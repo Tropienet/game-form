@@ -7,7 +7,7 @@ function NavBar() {
             <div className="navigation-links">
                 <a href="/Genre" className="navbar-link">Add Genre</a>
                 <a href="/GameForm" className="navbar-link">Add Game</a>
-                <a href="/Genre" className="navbar-link">Add Genre</a>
+                <a href="/Games" className="navbar-link">View Games</a>
             </div>
         </div>
     )
