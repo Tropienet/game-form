@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-import GameTypePage from "./GameTypePage";
+import GenrePage from "./GenrePage";
 
 const RouteSwitch = () => {
     return ( 
         <BrowserRouter>
             <Routes>
                 <Route path ="/" element={<App />} />
-                <Route path="/Genre" element={<GameTypePage />} />
+                <Route path="/Genre" element={<GenrePage />} />
             </Routes>
         </BrowserRouter>
     )

@@ -26,3 +26,10 @@ code {
 .add-game-type-btn {
   align-self: flex-start;
 }
+
+.navbar {
+  display: flex;
+  width: 100%;
+  min-height: 10rem;
+  background-color: #0075f2;
+}

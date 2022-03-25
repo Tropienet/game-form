@@ -4,28 +4,28 @@ import uniqid from "uniqid";
 
 const DB = firebase.firestore();
 
-const GameTypeForm = () => {
-    const [gameType, setGameType] = useState("");
+const GenreForm = () => {
+    const [genre, setGenre] = useState("");
 
     const HandleSubmit = (e) => {
         e.preventDefault();
 
-        if(gameType===""||!gameType.replace(/\s/g, "").length){
-            alert("ERROR! Must enter game type")
-            setGameType("");
+        if(genre===""||!genre.replace(/\s/g, "").length){
+            alert("ERROR! Must enter genre")
+            setGenre("");
         }else{
-            DB.collection("GameType").add({
+            DB.collection("genre").add({
                 id: uniqid(),
-                gameType: gameType,
+                genre: genre,
             })
             .then(() => {
-                alert("Game type has been submitted")
+                alert("Genre has been submitted")
             })
             .catch((error) => {
                 alert(error.message);
             })
     
-            setGameType("");
+            setGenre("");
         }
     }
 
@@ -38,8 +38,8 @@ const GameTypeForm = () => {
                     <input  type="text"
                             className="game-type-input"
                             placeholder="RPG, Action, Strategy..."
-                            value={gameType}
-                            onChange={(e) => setGameType(e.target.value)}>
+                            value={genre}
+                            onChange={(e) => setGenre(e.target.value)}>
                     </input>
                 </label>
                 <button type="submit" className="add-game-type-btn">Add</button>
@@ -48,4 +48,4 @@ const GameTypeForm = () => {
     )
 }
 
-export default GameTypeForm;
+export default GenreForm;
