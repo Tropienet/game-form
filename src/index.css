@@ -29,7 +29,45 @@ code {
 
 .navbar {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   min-height: 10rem;
   background-color: #0075f2;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #ffeaee;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: #e71d36;
+  transform: scale(1.05);
+}
+
+.navigation-links {
+  display: flex;
+  gap: 45px;
+  align-self: center;
+  margin: 0 3.5rem;
+  min-width: 500px;
+}
+
+.home-link {
+  align-self: center;
+  font-size: 2.3rem;
+  margin: 0 3.5rem;
+}
+
+.genre-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #632b30;
+}
+
+.game-type-container {
+  align-self: center;
+  padding: 2.5rem;
+  background-color: #ffeaee;
 }
