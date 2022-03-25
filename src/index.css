@@ -69,5 +69,28 @@ code {
 .game-type-container {
   align-self: center;
   padding: 2.5rem;
+}
+
+.game-form-page-container {
+  display: flex;
+  flex-direction: column;
   background-color: #ffeaee;
+  height: 100vh;
+}
+
+.game-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-self: center;
+  padding: 25px;
+  background-color: #00f2f2;
+  color: #3d3b30;
+  border: solid 2px #e71d36;
+  border-radius: 24px;
+  margin: 2.3rem;
+}
+
+.game-description {
+  resize: none;
 }
