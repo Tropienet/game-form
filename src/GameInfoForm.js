@@ -39,6 +39,7 @@ const GameInfoForm = () => {
             id: uniqid(),
             name: gameName,
             developer: gameDeveloper,
+            description: gameDescription,
         })
         .then(() => {
             alert("Game has been added");
@@ -50,6 +51,7 @@ const GameInfoForm = () => {
         setGameDeveloper("");
         setGameName("");
         setGameGenre("");
+        setGameDescription("");
     }
 
     return (
