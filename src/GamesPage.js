@@ -30,12 +30,12 @@ const GamesPage = () => {
     });
 
     return (
-        <div>
+        <div className="game-page-container">
             <Navbar />
-            <ul>
+            <ul className="games-in-genre-list">
                 {genres.map((genre) => (
                     <li key={genre.id}>
-                        <button onClick={() => setDisplayedGenre(genre.genre)} >{genre.genre}</button>
+                        <button onClick={() => setDisplayedGenre(genre.genre)} className="genre-btn">{genre.genre}</button>
                     </li>
                 ))}
             </ul>

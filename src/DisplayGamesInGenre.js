@@ -30,7 +30,7 @@ function DisplayGamesInGenre(props) {
     });
 
     return (
-        <div>
+        <div className="games-collection">
             <p>{fscollection}</p>
             <ul> This is the list:
                 {gamesInGenre.map((game) => (

@@ -94,3 +94,39 @@ code {
 .game-description {
   resize: none;
 }
+
+.games-in-genre-list {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  width: 80%;
+  margin: 50px 10%;
+  gap: 15px;
+  list-style: none;
+}
+
+.genre-btn {
+  padding: 0.4em 1em;
+  border-radius: 2rem;
+  border: solid 1px #de1a1a;
+  background-color: #d78521;
+  color: #f1e8f7;
+  transition: all 0.2s ease-in-out;
+  min-width: 100px;
+}
+
+.genre-btn:hover {
+  transform: scale(1.05);
+  background-color: #f1e8f7;
+  color: #d78521;
+}
+
+.game-page-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffeaee;
+  height: 100vh;
+}
+
+.games-collection {
+  align-self: center;
+}
