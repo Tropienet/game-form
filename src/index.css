@@ -164,3 +164,22 @@ code {
 .genre-list {
   list-style: none;
 }
+
+@media all and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    min-height: 150px;
+  }
+
+  .navigation-links {
+    margin: 2.5rem;
+  }
+
+  .home-link {
+    margin-top: 25px;
+  }
+
+  .games-in-genre-list {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
