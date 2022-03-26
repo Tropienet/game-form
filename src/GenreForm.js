@@ -33,7 +33,7 @@ const GenreForm = () => {
         <div className="game-type-container">
             <form onSubmit={HandleSubmit} className="game-type-form">
                 <label>
-                    Game Type 
+                    Genre
                     <br></br>
                     <input  type="text"
                             className="game-type-input"

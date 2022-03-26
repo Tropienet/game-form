@@ -21,6 +21,14 @@ code {
 .game-type-form {
   display: flex;
   flex-direction: column;
+  gap: 15px;
+  align-self: center;
+  padding: 25px;
+  background-color: #00f2f2;
+  color: #3d3b30;
+  border: solid 2px #e71d36;
+  border-radius: 24px;
+  margin: 2.3rem;
 }
 
 .add-game-type-btn {
@@ -31,7 +39,7 @@ code {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  min-height: 10rem;
+  min-height: 5.5rem;
   background-color: #0075f2;
 }
 
@@ -51,7 +59,7 @@ code {
   gap: 45px;
   align-self: center;
   margin: 0 3.5rem;
-  min-width: 500px;
+  min-width: 10.5rem;
 }
 
 .home-link {
@@ -63,7 +71,8 @@ code {
 .genre-page {
   display: flex;
   flex-direction: column;
-  background-color: #632b30;
+  background-color: #ffeaee;
+  height: 100vh;
 }
 
 .game-type-container {
@@ -129,4 +138,29 @@ code {
 
 .games-collection {
   align-self: center;
+}
+
+.displayed-games {
+  list-style: none;
+}
+
+.game {
+  padding: 1.7rem;
+  margin: 15px;
+  background-color: #f78764;
+  color: #083d77;
+  border-radius: 24px;
+  border: solid 1px #da4167;
+}
+
+.game:hover {
+  border: dotted 2px #ebebd3;
+}
+
+.genre-list-container {
+  align-self: center;
+}
+
+.genre-list {
+  list-style: none;
 }

@@ -32,10 +32,10 @@ function DisplayGamesInGenre(props) {
     return (
         <div className="games-collection">
             <p>{fscollection}</p>
-            <ul> This is the list:
+            <ul className="displayed-games"> This is the list:
                 {gamesInGenre.map((game) => (
-                    <li key={game.id}>
-                        <Game gameInfo={game}/>
+                    <li key={game.id} className="game">
+                        <Game gameInfo={game} fscollection={fscollection}/>
                     </li>
                 ))}
             </ul>

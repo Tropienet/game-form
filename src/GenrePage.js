@@ -7,7 +7,6 @@ const genrePage = () => {
     return(
         <div className="genre-page">
             <Navbar />
-            <h1>This is the game Type page</h1>
             <GenreForm />
             <br></br>
             <DisplayGenres />
