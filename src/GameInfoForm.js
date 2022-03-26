@@ -32,26 +32,60 @@ const GameInfoForm = () => {
 
     });
 
+    function validateInformation() {
+        if(gameName===""||!gameName.replace(/\s/g, "").length) {
+            alert("ERROR! Must enter a valid game name");
+            setGameName("");
+            setGameDeveloper("");
+            setGameDescription("");
+            return false;
+        }else if(gameDeveloper===""||!gameDeveloper.replace(/\s/g, "").length) {
+            alert("ERROR! Must enter a valid developer");
+            setGameName("");
+            setGameDeveloper("");
+            setGameDescription("");
+            return false;
+        }else if(gameDescription===""||!gameDescription.replace(/\s/g, "").length) {
+            alert("ERROR! Must enter a valid description");
+            setGameName("");
+            setGameDeveloper("");
+            setGameDescription("");
+            return false;
+        }else if(gameGenre==="") {
+            alert("ERROR! Choose a valid game genre");
+            setGameName("");
+            setGameDeveloper("");
+            setGameDescription("");
+            return false;
+        }else {
+            return true;
+        }
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        db.collection(`${gameGenre}`).add({
-            id: uniqid(),
-            name: gameName,
-            developer: gameDeveloper,
-            description: gameDescription,
-        })
-        .then(() => {
-            alert("Game has been added");
-        })
-        .catch((error) => {
-            alert(error.message);
-        })
+        let validation = validateInformation();
 
-        setGameDeveloper("");
-        setGameName("");
-        setGameGenre("");
-        setGameDescription("");
+        if(validation) {
+            db.collection(`${gameGenre}`).add({
+                id: uniqid(),
+                name: gameName,
+                developer: gameDeveloper,
+                description: gameDescription,
+            })
+            .then(() => {
+                alert("Game has been added");
+            })
+            .catch((error) => {
+                alert(error.message);
+            })
+
+            setGameDeveloper("");
+            setGameName("");
+            setGameGenre("");
+            setGameDescription("");
+        }
     }
 
     return (
@@ -98,7 +132,7 @@ const GameInfoForm = () => {
                                 onChange={(e) => setGameDescription(e.target.value)}>
                     </textarea>
                 </label>
-                <button type="submit">Add game</button>
+                <button type="submit" className="game-info-btn">Add game</button>
             </form>
         </div>
     )
