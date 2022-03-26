@@ -18,6 +18,33 @@ code {
     monospace;
 }
 
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffeaee;
+  height: 100vh;
+}
+
+.welcome-msg {
+  align-self: center;
+  margin-top: 2.3em;
+}
+
+.delete-game-btn {
+  padding: 0.4em 1em;
+  border-radius: 2rem;
+  border: solid 1px #de1a1a;
+  background-color: #d78521;
+  color: #f1e8f7;
+  transition: all 0.2s ease-in-out;
+}
+
+.delete-game-btn:hover {
+  transform: scale(1.05);
+  background-color: #f1e8f7;
+  color: #d78521;
+}
+
 .game-type-form {
   display: flex;
   flex-direction: column;
@@ -175,6 +202,18 @@ code {
 
 .genre-list {
   list-style: none;
+}
+
+.game-name {
+  margin: 0.3em 0;
+}
+
+.game-desc {
+  margin: 0.3em 0;
+}
+
+.game-developer {
+  margin: 0.3em 0;
 }
 
 .game-info-btn {

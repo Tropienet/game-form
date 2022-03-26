@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className="homepage-container">
       <Navbar />
-      <h1>This is the Homepage</h1>
+      <h2 className="welcome-msg">Try adding a genre/game</h2>
     </div>
   )
 }

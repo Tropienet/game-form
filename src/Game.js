@@ -18,10 +18,10 @@ function Game(props) {
 
     return (
         <>
-            <p>Game Name: {gameInfo.name}</p>
-            <p>Game Developer: {gameInfo.developer}</p>
-            <p>Game Description: {gameInfo.description}</p>
-            <button onClick={() => deleteGame(gameInfo.id)}>Delete game</button>
+            <p className="game-name">Game Name: {gameInfo.name}</p>
+            <p className="game-developer">Game Developer: {gameInfo.developer}</p>
+            <p className="game-desc">Game Description: {gameInfo.description}</p>
+            <button onClick={() => deleteGame(gameInfo.id)} className="delete-game-btn">Delete game</button>
         </>
     )
 }
