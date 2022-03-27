@@ -231,6 +231,22 @@ code {
   color: #d78521;
 }
 
+.btn {
+  margin-left: 15px;
+  padding: 0.4em 1em;
+  border-radius: 2rem;
+  border: solid 1px #de1a1a;
+  background-color: #d78521;
+  color: #f1e8f7;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #f1e8f7;
+  color: #d78521;
+}
+
 @media all and (max-width: 500px) {
   .navbar {
     flex-direction: column;
