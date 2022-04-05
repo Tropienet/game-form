@@ -137,10 +137,20 @@ code {
   border: solid 2px #e71d36;
   border-radius: 24px;
   margin: 2.3rem;
+  min-width: 450px;
 }
 
 .game-description {
   resize: none;
+  min-width: 400px;
+  height: 6rem;
+  font-size: 1.3rem;
+}
+
+.game-info-input {
+  min-width: 400px;
+  height: 2rem;
+  font-size: 1.2rem;
 }
 
 .games-in-genre-list {
@@ -223,6 +233,7 @@ code {
   background-color: #d78521;
   color: #f1e8f7;
   transition: all 0.2s ease-in-out;
+  align-self: center;
 }
 
 .game-info-btn:hover {

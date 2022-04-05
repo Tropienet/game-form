@@ -97,6 +97,7 @@ const GameInfoForm = () => {
                     Game Name:
                     <br></br>
                     <input  type="text" 
+                            className="game-info-input"
                             placeholder="Diablo 3, Heartstone, League of legends..."
                             value={gameName}
                             onChange={(e) => setGameName(e.target.value)}></input>
@@ -105,6 +106,7 @@ const GameInfoForm = () => {
                     Developed by:
                     <br></br>
                     <input  type="text" 
+                            className="game-info-input"
                             placeholder="Blizzard, Riot, Valve..."
                             value={gameDeveloper}
                             onChange={(e) => setGameDeveloper(e.target.value)}></input>
